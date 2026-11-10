@@ -1,34 +1,619 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Ecommerce Website</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-container container">
+          <div class="header-contact">
+            <span>+92 300 4224497 </span>
+            <span> Our Location </span>
+          </div>
+          <p class="header-alert-news">
+            Super Value Deals - Save more with coupons
+          </p>
+          <a href="login-register.html" class="header-top-action"
+            >Login / Signup</a
+          >
+        </div>
+      </div>
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/logo.svg" alt="logo" class="nav-logo-img" />
+        </a>
+        <div class="nav-menu" id="nav-menu-id">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link">My Account</a>
+            </li>
+            <li class="nav-item">
+              <a href="compare.html" class="nav-link">Compare</a>
+            </li>
+            <li class="nav-item">
+              <a href="login-register.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+
+          <div class="header-search">
+            <input
+              type="text"
+              placeholder="Search for items..."
+              class="form-input"
+            />
+            <button class="search-btn">
+              <img src="assets/img/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="header-user-actions">
+          <a href="wishlist.html" class="header-actions-btn">
+            <img src="assets/img/icon-heart.svg" alt="heart" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header-actions-btn">
+            <img src="assets/img/icon-cart.svg" alt="cart" />
+            <span class="count">5</span>
+          </a>
+        </div>
+      </nav>
+    </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home"></section>
+      <section class="home section-lg">
+        <div class="home-container container grid">
+          <div class="home-content">
+            <span class="home-subtitle">Hot promotions</span>
+            <h1 class="home-title">
+              Fashsion Trending <span>Great Collection</span>
+            </h1>
+            <p class="home-description">
+              Save more with coupons & up to 20% off
+            </p>
+            <a href="shop.html" class="btn">Shop Now</a>
+          </div>
+          <img src="assets/img/home-img.png" class="home-img" alt="" />
+        </div>
+      </section>
 
       <!--=============== CATEGORIES ===============-->
-      <section class="categories"></section>
+      <section class="categories container section">
+        <h3 class="section-title"><span>Popular</span> Categories</h3>
+        <div class="categories-container swiper">
+          <div class="swiper-wrapper">
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-1.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">T-shirt</h3>
+            </a>
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-2.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">Bags</h3>
+            </a>
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-3.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">Sandals</h3>
+            </a>
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-4.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">Scarf Caps</h3>
+            </a>
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-5.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">Shoes</h3>
+            </a>
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-6.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">Pillowcase</h3>
+            </a>
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-7.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">Jumpsuit</h3>
+            </a>
+            <a href="shop.html" class="category-item swiper-slide">
+              <img
+                src="assets/img/category-8.jpg"
+                class="category-img"
+                alt=""
+              />
+              <h3 class="category-title">Hats</h3>
+            </a>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fi fi-br-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fi fi-br-angle-left"></i>
+          </div>
+        </div>
+      </section>
 
       <!--=============== PRODUCTS ===============-->
-      <section class="products"></section>
+      <section class="products container section">
+        <div class="tab-btns">
+          <span class="tab-btn active-tab">Featured</span>
+          <span class="tab-btn">Popular</span>
+          <span class="tab-btn">New added</span>
+        </div>
+        <div class="tab-items">
+          <div class="tab-item">
+            <div class="product-container grid">
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-1-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-1-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-2-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-2-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-3-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-3-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-4-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-4-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-5-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-5-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-6-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-6-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-7-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-7-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-img">
+                    <img
+                      src="assets/img/product-8-1.jpg"
+                      alt=""
+                      class="product-image-default"
+                    />
+                    <img
+                      src="assets/img/product-8-2.jpg"
+                      alt=""
+                      class="product-image-hover"
+                    />
+                  </a>
+                  <div class="product-actions">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle"></i>
+                    </a>
+                  </div>
+                  <div class="product-bagde light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"> Clothing </span>
+                  <a href="details.html"
+                    ><h3 class="product-title">Colorful Pattren Shirts</h3></a
+                  >
+                  <div class="product-rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product-price flex">
+                    <span class="new-price">Rs 8000</span>
+                    <span class="old-price">Rs 10000</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action-btn cart-btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--=============== DEALS ===============-->
       <section class="deals"></section>
@@ -47,9 +632,9 @@
     <footer class="footer"></footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
