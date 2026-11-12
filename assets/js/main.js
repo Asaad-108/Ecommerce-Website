@@ -24,6 +24,20 @@ const swiperCategories = new Swiper(".categories-container", {
 });
 /*=============== SWIPER PRODUCTS ===============*/
 
+const swiperProducts = new Swiper(".new-arrivals-container", {
+  // Optional parameters
+  direction: "horizontal",
+  //   loop: true,
+  slidesPerView: 4,
+  spaceBetween: 24,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 /*=============== PRODUCTS TABS ===============*/
 
 const tabs = document.querySelectorAll("[data-target]");
