@@ -25,3 +25,21 @@ const swiperCategories = new Swiper(".categories-container", {
 /*=============== SWIPER PRODUCTS ===============*/
 
 /*=============== PRODUCTS TABS ===============*/
+
+const tabs = document.querySelectorAll("[data-target]");
+const tabContent = document.querySelectorAll("[content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    console.log(target);
+    tabContent.forEach((e) => {
+      e.classList.remove("active-tab");
+    });
+    target.classList.add("active-tab");
+    tabs.forEach((e) => {
+      e.classList.remove("active-tab");
+    });
+    tab.classList.add("active-tab");
+  });
+});
